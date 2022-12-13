@@ -1,7 +1,7 @@
 class King
   attr_reader :file, :rank, :colour, :symbol, :name
 
-  MOVES = [].freeze
+  MOVES = [[1, 1], [1, -1], [1, 0], [0, 1], [0, -1], [-1, 1], [-1, -1,], [-1, 0]].freeze
 
   def initialize(file, rank, colour)
     @file = file

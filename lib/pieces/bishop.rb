@@ -1,7 +1,7 @@
 class Bishop
   attr_reader :file, :rank, :colour, :symbol, :name
 
-  MOVES = [].freeze
+  MOVES = [[1, 1], [1, -1], [-1, 1], [-1, -1]].freeze
 
   def initialize(file, rank, colour)
     @file = file
