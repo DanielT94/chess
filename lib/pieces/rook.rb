@@ -1,7 +1,7 @@
 class Rook
   attr_reader :file, :rank, :colour, :symbol, :name
 
-  MOVES = [[1, 0], [-1. 0], [0, 1], [0, -1]].freeze
+  MOVES = [[1, 0], [-1, 0], [0, 1], [0, -1]].freeze
 
   def initialize(file, rank, colour)
     @file = file
