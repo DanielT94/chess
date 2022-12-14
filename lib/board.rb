@@ -18,11 +18,13 @@ class Board
   end
   
   def display_board
-    puts ' a  b  c  d  e  f  g  h'
+    puts '     a  b  c  d  e  f  g  h'
     chequered_board.size.times do |idx|
-      puts chequered_board[idx].join
+      printf("%<rank>3s %<board>-26s %<rank>-3s\n",
+        { rank: (board.size - idx).to_s,
+          board: chequered_board[idx].join,})
     end
-    puts ' a  b  c  d  e  f  g  h'
+    puts '     a  b  c  d  e  f  g  h'
   end
 
   def chequered_board
